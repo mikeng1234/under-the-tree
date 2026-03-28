@@ -1,0 +1,132 @@
+/* === Reset & Base === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f4f1eb;
+  color: #3a3a3a;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+  padding: 0 1rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 1px solid #d4cfc5;
+}
+
+.tree-icon {
+  font-size: 3rem;
+  margin-bottom: 0.25rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2d5016;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #7a7a6e;
+  margin-top: 0.35rem;
+  font-style: italic;
+}
+
+/* === Thought Cards === */
+#thoughts {
+  padding: 1.5rem 0;
+}
+
+.thought-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem 1.25rem 1rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.thought-card time {
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 0.3rem;
+}
+
+.thought-card h2 {
+  font-size: 1.15rem;
+  color: #2d5016;
+  margin-bottom: 0.5rem;
+}
+
+.thought-card p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #e8f0de;
+  color: #4a7a25;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1.5rem 0 2.5rem;
+  border-top: 1px solid #d4cfc5;
+  font-size: 0.85rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+/* === Mobile touch targets === */
+@media (hover: none) {
+  .thought-card {
+    padding: 1.4rem;
+  }
+}
+
+/* === Dark mode for outdoor reading === */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a17;
+    color: #d4d0c8;
+  }
+  header {
+    border-bottom-color: #3a3a34;
+  }
+  h1, .thought-card h2 {
+    color: #8fbc5a;
+  }
+  .subtitle {
+    color: #8a8a7e;
+  }
+  .thought-card {
+    background: #252520;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  .thought-card time {
+    color: #777;
+  }
+  .tag {
+    background: #2e3a22;
+    color: #8fbc5a;
+  }
+  footer {
+    border-top-color: #3a3a34;
+    color: #666;
+  }
+}
